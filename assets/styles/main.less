@@ -1,0 +1,251 @@
+@import "../../bower_components/bootstrap/less/mixins.less";
+@import "../../bower_components/bootstrap/less/variables.less";
+
+html {
+}
+body {
+  background-color: black;
+  color: white;
+  font-weight: 400;
+  font-family: 'Noto Sans' !important;
+
+  @media(max-width: 850px) {
+  }
+}
+
+.logo {
+  img {
+    .img-responsive();
+    .center-block();
+  }
+  .hide-text();
+
+  padding: 0;
+  margin: 0;
+  .center-block();
+
+  width: 29%; //348px / 1200px
+  /*height: 19.125%; //153px / 800px*/
+}
+
+.dot-line {
+  display: inline-block;
+  width: 8.828125%;
+  img {
+    .img-responsive(inline);
+  }
+}
+.slogan {
+  font-size: 2em;
+  text-align: center;
+  .center-block();
+  span {
+    margin: 0 1.171875%;
+  }
+  margin-top: 7.03125%;
+  color: rgba(255,255,255,0.8);
+}
+
+.page-wrapper {
+  max-width: 1280px;
+  width: 100%;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: -5px;
+}
+
+.page-wrapper:after {
+  padding-top:62.5%;
+  display: block;
+  content: '';
+  height: 0;
+}
+
+#gradient1 {
+  #gradient > .vertical(#002978;#5ec7a4;15%;70%);
+}
+#gradient2 {
+  #gradient > .vertical(#5ec7a4;#ff6e14;15%;70%);
+}
+#gradient3 {
+  #gradient > .vertical(#ff6e14;#da0080;15%;70%);
+}
+#gradient4 {
+  #gradient > .vertical(#da0080;#4f388e;15%;70%);
+}
+#gradient5 {
+  #gradient > .vertical(#4f388e;#00ceab;15%;70%);
+}
+
+.page {
+  position: absolute;
+  top: 0; bottom: 0; right: 0; left: 0;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+#page1 {
+  padding-top: 22.5%;
+}
+#page2 {
+
+  .appscreen {
+    padding-top: 6.3333333%;
+    padding-left: 14.21875%;
+    .img-responsive();
+  }
+
+  .row {
+    height: 20.4%;
+  }
+}
+
+#page3 {
+
+  img {
+    .img-responsive();
+  }
+  font-size: 1.250em;
+  line-height: 2.250em;
+
+  .media-left {
+    padding-right: 3.555555556%;
+    width: 18.222222222%;
+    /*max-width: 164px !important;*/
+  }
+  .media-body {
+    width: 81.777777%;
+  }
+  .media {
+    display: table; 
+    width: 100%;
+    margin-bottom: 5.555555556%;
+  }
+
+  .media-list {
+    margin-top: 4.75%;
+    margin-left: 29.6875%;
+
+    @media(max-width: 850px) {
+      margin-left: 15%;
+    }
+  }
+}
+#page4 {
+  img {
+    .img-responsive();
+  }
+}
+#page5 {
+  padding-top: 24.375%;
+  text-align: center;
+  .link-wrapper {
+    width: 23.90625%;
+    height: 22.131147541%;
+    max-height: 108px;
+    margin: 0 auto;
+    line-height: 0;
+    font-size: 0;
+
+    .twitter, .facebook {
+      display: inline-block;
+      .hide-text();
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 35.2941176%;
+      height: 100%;
+    }
+
+    .facebook {
+      background-image: url(/img/facebook_button_inactive.png);
+      &:hover {
+        background-image: url(/img/facebook_button_active.png);
+      }
+    }
+
+    .twitter {
+      background-image: url(/img/twitter_button_inactive.png);
+      margin-right: 29.4117647%;
+      &:hover {
+        background-image: url(/img/twitter_button_active.png);
+      }
+    }
+  }
+
+  .logo-small {
+    margin-top: 12.8125%;
+    img {
+      .img-responsive();
+      .center-block();
+    }
+    .hide-text();
+  }
+
+  .disclaimer {
+    font-size: 1.5em;
+    margin-top: 2.03125%;
+    span {
+      margin: 0 1.171875%;
+    }
+  }
+}
+
+.buttons {
+  /*height: 100%; //(1/62.5%) * 12.75%*/
+  /*padding-top: 45.375%;*/
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 12.75%;
+  line-height: 0;
+  font-size: 0;
+}
+a.button {
+  .hide-text();
+  display: inline-block;
+  min-width: 50px;
+  min-height: 50px;
+  max-width: 102px;//7.96875%;
+  max-height: 102px;
+  width: 8.4375%;
+  height: 100%;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  &.appstore {
+    background-image: url(/img/apple_button_inactive.png);
+    &:hover {
+      background-image: url(/img/apple_button_active.png);
+    }
+  }
+  &.playstore {
+    background-image: url(/img/googleplay_button_inactive.png);
+    &:hover {
+      background-image: url(/img/googleplay_button_active.png);
+    }
+  }
+
+  margin-left: 2.96875%;
+  &:first-child {
+    margin-left: 0;
+  }
+
+}
+
+#page4 {
+  padding-top: 12.03125%;
+  padding-left: 7.8125%;
+  .oneliner {
+    position: absolute;
+    top: 27.75%;
+    left: 51%;
+    font-size: 1.75em;
+  }
+}
+
+.gradient-bg {
+  width: 100%;
+}
