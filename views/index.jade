@@ -6,6 +6,7 @@ html
     link(href='http://fonts.googleapis.com/css?family=Noto+Sans', rel='stylesheet', type='text/css')
     link(rel="stylesheet",type="text/css",href="bootstrap/css/bootstrap.min.css")
     link(rel="stylesheet",type="text/css",href="css/main.css")
+    meta(name="viewport",content="width=device-width, initial-scale=1, maximum-scale=2")
   body
     #gradient1.gradient-bg
       .page-wrapper
@@ -26,12 +27,13 @@ html
           div(style="height:100%;")
             //-.col-lg-9.col-sm-12(style="height:100%;")
             img.appscreen(style="max-height: 100%;", src="/img/iPhone-6-PLUS-White-iphone_page2.png")
+            .download Download available soon
             div.buttons
-              a.button.appstore(target="_blank", href="http://apple.com") app store
-              a.button.playstore(target="_blank", href="http://google.com") play store
+              a.button.appstore(target="_blank", href="#", onclick="alert('Download available soon'); return false;") app store
+              a.button.playstore(target="_blank", href="#", onclick="alert('Download available soon'); return false;") play store
 
     #gradient3.gradient-bg
-      .page-wrapper
+      .page-wrapper.special
         #page3.page
           ul.media-list
             li.media
@@ -58,21 +60,22 @@ html
                 |Comment other's story either voice or text.
 
     #gradient4.gradient-bg
-      .page-wrapper
+      .page-wrapper.special2
         #page4.page
-          img.multiscreen(src="img/vox_web_page_multiscreen.png")
           p.oneliner
             |vox wants to hear your story only<br>
             |through an honest and hearful voice.
+          img.multiscreen(src="img/vox_web_page_multiscreen.png")
+          .download Download available soon
           div.buttons(style="height: 15.789473684%;")
-            a.button.appstore(target="_blank", href="http://apple.com") app store
-            a.button.playstore(target="_blank", href="http://apple.com") play store
+            a.button.appstore(target="_blank", href="#", onclick="alert('Download available soon'); return false;") app store
+            a.button.playstore(target="_blank", href="#", onclick="alert('Download available soon'); return false;") play store
 
     #gradient5.gradient-bg
-      .page-wrapper
+      .page-wrapper.special
         #page5.page
           .link-wrapper
-            a.twitter(href="http://twitter.com/easi6") vox twitter
+            a.twitter(href="http://twitter.com/voxstory") vox twitter
             a.facebook(href="http://facebook.com/easi6") vox facebook
 
           h1.logo.logo-small
