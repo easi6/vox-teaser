@@ -65,14 +65,14 @@ body {
   margin-bottom: -5px;
   &.special {
     &:after {
-      @media only screen and (-webkit-device-pixel-ratio: 2) {
+      @media only screen and (-webkit-device-pixel-ratio: 2), screen and (-webkit-device-pixel-ratio: 3) {
         padding-top: 90%;
       }
     }
   }
   &.special2 {
     &:after {
-      @media only screen and (-webkit-device-pixel-ratio: 2) {
+      @media only screen and (-webkit-device-pixel-ratio: 2), screen and (-webkit-device-pixel-ratio: 3) {
         padding-top: 100%;
       }
     }
@@ -104,7 +104,8 @@ body {
 }
 
 .page {
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: visible;
   position: absolute;
   top: 0; bottom: 0; right: 0; left: 0;
   max-width: 1280px;
