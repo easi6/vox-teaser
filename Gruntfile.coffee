@@ -69,7 +69,8 @@ module.exports = (grunt) ->
     jade:
       compile:
         files:
-          "dist/index.html": ["views/index.jade"]
+          "dist/index.html": ["views/index.jade"],
+          "dist/terms.html": ["views/terms.jade"],
     copy:
       img:
         files: [
